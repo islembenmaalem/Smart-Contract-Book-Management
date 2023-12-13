@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management System</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.0/dist/web3.min.js"></script>
+
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-color: #f8f9fa; /* Set a light background color */
+        }
+
+        h1 {
+            color: #007bff; /* Set a primary color for the heading */
+        }
+
+        .container {
+            max-width: 600px; /* Set the maximum width of the container */
+            margin-top: 50px; /* Add some top margin */
+        }
+
+        .form-group {
+            margin-bottom: 20px; /* Add some bottom margin to form groups */
+        }
+
+        /* Customize the button style */
+        .btn-primary,
+        .btn-danger,
+        .btn-warning,
+        .btn-success {
+            width: 40%; /* Make buttons fill the container width */
+        }
+
+        /* Style for the footer or additional sections if needed */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container mt-4 text-center">
+    <h1>Book Management System</h1>
+
+    <div class="mt-4">
+        <div class="form-group">
+            <button class="btn btn-primary" onclick="addBook()">Add Book</button>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-danger" onclick="deleteBook()">Delete Book</button>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-warning" onclick="modifyBook()">Modify Book</button>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-success" onclick="getBook()">Get Book</button>
+        </div>
+    </div>
+</div>
+<footer>
+    &copy; 2023 Book Management App
+</footer>
+
+<script>
+    function addBook() {
+        window.location.href = "AddBook.html";
+
+        // Add your logic for adding a book
+        alert('Adding a book...');
+    }
+
+    function deleteBook() {
+        // Add your logic for deleting a book
+        alert('Deleting a book...');
+    }
+
+    function modifyBook() {
+        // Add your logic for modifying a book
+        alert('Modifying a book...');
+    }
+
+    function getBook() {
+        // Add your logic for getting a book
+        alert('Getting a book...');
+    }
+
+        
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Book</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Get Book</h1>
+
+        <div class="form-group">
+            <label for="bookTitlToGet">Book Title:</label>
+            <input type="text" class="form-control" id="bookTitleGet">
+        </div>
+        <button class="btn btn-primary" onclick="GetBook()">Get Book</button>
+        <div class="mt-3">
+            <h2>Book Details</h2>
+            <p><strong>Title:</strong> <span id="bookTitle"></span></p>
+            <p><strong>Genre:</strong> <span id="bookGenre"></span></p>
+            <p><strong>Price:</strong> <span id="bookPrice"></span></p>
+        </div>
+    </div>
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

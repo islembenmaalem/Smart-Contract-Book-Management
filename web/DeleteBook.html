@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete book</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Remove Book</h1>
+
+        <div class="form-group">
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" class="form-control" id="bookTitleremove">
+        </div>
+        <button class="btn btn-primary" onclick="removeBook()">Remove Book</button>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Function to extract query parameters from URL
+        function getQueryVariable(variable) {
+            const query = window.location.search.substring(1);
+            const vars = query.split('&');
+            for (let i = 0; i < vars.length; i++) {
+                const pair = vars[i].split('=');
+                if (pair[0] === variable) {
+                    return pair[1];
+                }
+            }
+            return null;
+        }
+    
+        // Function to set input values from query parameters
+        function setInputsFromQueryParameters() {
+            const bookTitle = getQueryVariable('title');
+    
+            document.getElementById('bookTitleremove').value = bookTitle;
+        }
+    
+        // Call the function when the page loads
+        window.onload = setInputsFromQueryParameters;
+    </script>
+    
+</body>
+</html>
